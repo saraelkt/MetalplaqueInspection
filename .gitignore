@@ -1,0 +1,75 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Model files (too large for git)
+*.pt
+*.pth
+*.weights
+*.onnx
+
+# Data files
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+!example_*.jpg
+!example_*.png
+
+# Output directories
+runs/
+output/
+results/
+screenshots/
+screenshots1/
+test_undistorted/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Project specific directories
+_corrigees/
+_images_annotées/
+_images_annotées2/
+_rotation_applied/
+_rotation_applied - Copie/
+_unseen/
+corrigees_/
+frames_mouvement/
+image_annotees_glob/
+images_annotées_v2/
+mask/
+mask_rcnn/
+plaques_coco/
+plaques_dataset/
+Annotated_Data/
+JSON/
+JSON_glob/
+JSON_v2/
+labels_yolo/
+labels_yolo_vF/
