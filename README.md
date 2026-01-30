@@ -2,7 +2,7 @@
 
 Automated metal plaque inspection system using computer vision and deep learning for dimension measurement and defect detection.
 
-## 🔍 Overview
+## Overview
 
 This project implements an automated inspection system for metal plaques using:
 
@@ -11,17 +11,17 @@ This project implements an automated inspection system for metal plaques using:
 - **Perspective transformation** for accurate measurements
 - **Real-world dimension calculation** using calibrated scales
 
-## 📋 Features
+## Features
 
-- ✅ Fisheye lens undistortion
-- ✅ Automatic image rotation correction
-- ✅ YOLO-based plaque detection with instance segmentation
-- ✅ Perspective correction using homography
-- ✅ Multi-band pixel-to-cm calibration
-- ✅ Automatic dimension measurements (length, width, height)
-- ✅ Visual overlay with measurement annotations
+- Fisheye lens undistortion
+- Automatic image rotation correction
+- YOLO-based plaque detection with instance segmentation
+- Perspective correction using homography
+- Multi-band pixel-to-cm calibration
+- Automatic dimension measurements (length, width, height)
+- Visual overlay with measurement annotations
 
-## 🛠️ Requirements
+## Requirements
 
 ```bash
 pip install opencv-python numpy pandas ultralytics
@@ -35,7 +35,7 @@ pip install opencv-python numpy pandas ultralytics
 - Pandas
 - Ultralytics YOLO
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Inspection_Plaques/
@@ -47,7 +47,7 @@ Inspection_Plaques/
 └── [input images]           # Images to process
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Prepare Your Environment
 
@@ -89,7 +89,7 @@ jupyter notebook CodeAvtInteg.ipynb
 python inspection.py
 ```
 
-## 📊 Calibration File Format
+## Calibration File Format
 
 The `echelles_bandes.csv` file contains calibration data for different image regions:
 
@@ -104,7 +104,7 @@ x_start,x_end,px_cm_X,px_cm_Y
 - `px_cm_X`: Pixels per cm in X direction
 - `px_cm_Y`: Pixels per cm in Y direction
 
-## 🎯 How It Works
+## How It Works
 
 1. **Distortion Correction**: Removes fisheye lens distortion using camera calibration parameters
 2. **Rotation**: Applies rotation correction to align plaques
@@ -114,7 +114,7 @@ x_start,x_end,px_cm_X,px_cm_Y
 6. **Measurement**: Calculates real-world dimensions using calibrated scales
 7. **Visualization**: Draws measurement grid and annotations
 
-## 📐 Measurement Grid
+## Measurement Grid
 
 The system generates:
 
@@ -122,7 +122,7 @@ The system generates:
 - **Horizontal lines**: Width measurements (top, middle, bottom)
 - **Annotations**: Real measurements in centimeters
 
-## ⚙️ Advanced Configuration
+## Advanced Configuration
 
 ### Camera Distortion Parameters
 
@@ -145,7 +145,7 @@ THICK_V, THICK_H = 4, 4              # Line thickness
 MASK_ALPHA = 0.25                    # Mask overlay transparency
 ```
 
-## 📝 Output
+## Output
 
 The system generates:
 
@@ -156,13 +156,13 @@ The system generates:
 Example output:
 
 ```
-✅ Undistort appliqué
-✅ Rotation appliquée
-🔎 Objets détectés: 1
-✅ Image finale avec mesures → brute04_result.png
+Undistort appliqué
+Rotation appliquée
+Objets détectés: 1
+Image finale avec mesures → brute04_result.png
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### No objects detected
 
@@ -181,17 +181,9 @@ Example output:
 - Verify HFOV_DEG parameter matches your camera
 - Check distortion coefficients (D array)
 
-## 📄 License
+## License
 
 This project is for research and industrial inspection purposes.
-
-## 👥 Contributors
-
-- Sara El Koutit
-
-## 📧 Contact
-
-For questions or issues, please open an issue on GitHub.
 
 ---
 
